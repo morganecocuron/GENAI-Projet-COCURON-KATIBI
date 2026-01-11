@@ -1,4 +1,4 @@
-"""OpenRouter API client for making LLM requests."""
+"""Ollama API client for making LLM requests."""
 
 import httpx
 from typing import List, Dict, Any, Optional
@@ -14,6 +14,7 @@ async def ollama_chat(
     Doc officielle: POST /api/chat. (cf docs Ollama)
     """
     url = f"{base_url.rstrip('/')}/api/chat"
+    # Payload conforme à l'API Ollama
     payload = {
         "model": model,
         "messages": messages,
