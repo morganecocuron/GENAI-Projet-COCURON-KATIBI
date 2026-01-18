@@ -17,7 +17,7 @@ load_dotenv()
 COUNCIL_BASE_URL = os.getenv("COUNCIL_BASE_URL", "http://localhost:11434")
 
 # Chairman tourne sur le pc de l'autre membre du binôme. On utilise l'IP du second ordinateur
-CHAIRMAN_BASE_URL = os.getenv("CHAIRMAN_BASE_URL", "http://172.20.10.3:11434")
+CHAIRMAN_BASE_URL = os.getenv("CHAIRMAN_BASE_URL", "http://172.20.10.4:11434")
 
 # Liste des modèles composant le Council
 # Chaque modèle peut être surchargé via les variables d'environnement
